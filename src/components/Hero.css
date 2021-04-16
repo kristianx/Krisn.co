@@ -1,0 +1,15 @@
+.Hero{
+    height: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+h1.Hero-text{
+    font-size:40px;
+    font-weight: 500;
+    color:var(--clr-grey-light);
+}
+.text-dark{
+    color:var(--clr-grey-dark);
+}

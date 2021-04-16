@@ -1,0 +1,28 @@
+.nav-section{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.Logo-text{
+    font-size: 25px;
+    color:var(--clr-grey-dark);
+}
+.nav-section a{
+    font-size: 18px;
+    color:var(--clr-grey-dark);
+    font-weight: 500;
+}
+.nav-section ul:hover a{
+    color: var(--clr-grey-light);
+}
+.nav-section a:hover{
+    color:var(--clr-grey-dark)!important;
+}
+.nav-section li{
+    display: inline;
+    margin-right: 2.5em;
+}
+.nav-section li:last-child{
+    margin-right:0;
+}
