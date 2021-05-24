@@ -6,18 +6,18 @@
 }
 .Logo-text{
     font-size: 25px;
-    color:var(--clr-grey-dark);
+    color:var(--primary);
 }
 .nav-section a{
     font-size: 18px;
-    color:var(--clr-grey-dark);
+    color:var(--primary);
     font-weight: 500;
 }
 .nav-section ul:hover a{
     color: var(--clr-grey-light);
 }
 .nav-section a:hover{
-    color:var(--clr-grey-dark)!important;
+    color:var(--primary)!important;
 }
 .nav-section li{
     display: inline;
@@ -25,4 +25,47 @@
 }
 .nav-section li:last-child{
     margin-right:0;
+}
+.hamburger{
+    padding-top: 5px;
+    fill: var(--primary);
+    display: none;
+}
+.nav-section ul.active{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    height: calc(100vh - 100px);
+    background-color: white;
+    top: 100px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    flex-direction: column;
+    padding-top: 50px;
+}
+
+.nav-section ul.active li{
+    margin: 0;
+    padding: 20px 0;
+   
+}
+.nav-section ul.active a{
+    font-size: 25px;
+    color: var(--primary);
+}
+.nav-social{
+    flex-grow: 1;
+}
+.nav-social .social{
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    position: absolute;
+}
+.nav-social a{
+    margin: 0 20px;
 }

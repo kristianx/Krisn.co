@@ -11,5 +11,5 @@ h1.Hero-text{
     color:var(--clr-grey-light);
 }
 .text-dark{
-    color:var(--clr-grey-dark);
+    color:var(--primary);
 }

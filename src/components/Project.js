@@ -10,7 +10,7 @@ function Project(props) {
 
       <div className="description">
         <img className="project-logo" src={props.logoImage} alt=""/>
-        <p>{props.descriptionText}</p>
+        <p className="description-text">{props.descriptionText}</p>
         <div className="tags">
           {
             props.tags.map((tag)=>(

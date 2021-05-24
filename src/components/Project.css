@@ -10,7 +10,7 @@
     background-size: cover;
     background-position: center center;
     position: relative;
-    cursor:crosshair;
+    cursor:pointer;
 }
 .project-logo{
     width: auto;
@@ -86,23 +86,22 @@
     background-blend-mode: multiply;
 }
 .project:hover img.mockup-lg{
-    width: 53%;
-    transform:translateX(2em);
+    width: 50%;
 }
 .travelo:hover img.mockup-lg{
-    width: 82%;
+    width: 81%;
 }
 .analysis:hover img.mockup-sm{
-    transform:translateX(2em);
-    width: 100%;
+    transform:translateX(0.7em);
+    width: 98%;
 }
 .rainer:hover img.mockup-sm{
-    width: 85%;
+    width: 81.5%;
 }
 
 /* Custom styling */
 .rainer .project-logo{
-    height: 44px;
+    height: 40px;
     margin: 5px 0;
 }
 .analysis .mockup-sm{
@@ -113,3 +112,4 @@
     width: 80%;
     bottom: -6em;
 }
+

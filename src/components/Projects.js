@@ -22,7 +22,7 @@ import traveloLogo from "../img/traveloLogo.svg"
 
 function Projects() {
   return (
-    <div className="container">
+    <div className="container mg-tp-100 mg-bt-200">
       <h1 className="section-title">Projects</h1>
       <section className="projects">
         <Project 
