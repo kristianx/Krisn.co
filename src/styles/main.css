@@ -1,0 +1,97 @@
+/**** Variables ****/
+:root {
+  --clr-grey-light: #bbbbbb;
+  --clr-grey-dark: #222222;
+  --primary: #223144;
+}
+/**** Global styles ****/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  transition: all 0.15s ease-out;
+}
+html {
+  margin: auto;
+  min-width: 100vw;
+  scroll-behavior: smooth;
+  overflow: hidden;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, Lato, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-overflow-scrolling: touch;
+  /*overflow-x:hidden;*/
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.container {
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+}
+.section-title {
+  font-size: 100px;
+  color: var(--primary);
+  z-index: 99;
+  letter-spacing: 0.03em;
+  margin-left: -7px;
+  position: absolute;
+  display: inline-block;
+  top: -99px;
+  left: 0;
+}
+.mg-tp-100 {
+  margin-top: 100px;
+}
+.mg-tp-200 {
+  margin-top: 200px;
+}
+.mg-bt-200 {
+  margin-bottom: 200px;
+}
+
+/**** Mobile ****/
+@media screen and (max-width: 1300px) {
+  body {
+    width: 100vw;
+  }
+}
+@media screen and (max-width: 940px) {
+  h1.section-title {
+    font-size: 50px;
+    top: -48px;
+    margin-left: -3px;
+  }
+}
+
+/**** Scrollbar ****/
+::-webkit-scrollbar {
+  display: none;
+}
+/*
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #afafaf;
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #8b8b8b;
+}
+::-webkit-scrollbar-track {
+  background: #eee;
+}
+*/

@@ -1,17 +1,15 @@
-import '../main.css';
-import Nav from '../components/Nav'
-import Hero from '../components/Hero';
-import Projects from '../components/Projects';
-import Footer from '../components/Footer'
-
+import Nav from "../components/Nav";
+import Hero from "../components/Hero";
+import Projects from "../components/Projects";
+import Footer from "../components/Footer";
 
 function Home() {
   return (
     <div className="container">
-      <Nav/>
-      <Hero/>
-      <Projects/>
-      <Footer/>
+      <Nav />
+      <Hero />
+      <Projects />
+      <Footer />
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import Nav from '../components/Nav'
-import '../main.css';
+//import '../main.css';
 
 function Blog(){
     return (
