@@ -73,7 +73,6 @@ const SplitScrollSection = styled.section`
     width: 80%;
     height: auto;
     max-height: 95%;
-    object-fit: scale-down;
   }
   .right-section-items div p {
     width: 80%;

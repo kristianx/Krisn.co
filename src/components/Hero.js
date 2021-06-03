@@ -6,7 +6,8 @@ const HeroSection = styled.div`
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 0 20px;
+  padding: 100px 0 20px;
+
   h1.Hero-text {
     font-size: 40px;
     font-weight: 500;

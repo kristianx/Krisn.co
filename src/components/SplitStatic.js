@@ -8,6 +8,7 @@ const SplitStaticSection = styled.section`
   align-items: center;
   justify-content: center;
   margin: auto;
+  //Pogledati ovo
   .light-theme {
     color: white;
     h1,
@@ -74,6 +75,7 @@ const SplitStaticSection = styled.section`
   @media screen and (max-width: 1160px) {
     flex-direction: column;
     height: 70vh;
+
     justify-content: space-evenly;
     .intro {
       p {
@@ -88,6 +90,8 @@ const SplitStaticSection = styled.section`
     }
   }
   @media screen and (max-width: 900px) {
+    min-height: 60vh;
+    height: 65vh;
     .services span {
       font-size: 0.9em;
       letter-spacing: 0.1em;

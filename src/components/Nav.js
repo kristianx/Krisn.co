@@ -4,98 +4,110 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 //import { disablePageScroll, enablePageScroll } from 'scroll-lock';
 
-const NavigationStyled = styled.nav`
-  height: 100px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  .Logo-text {
-    font-size: 25px;
-    color: var(--primary);
-  }
-  a {
-    font-size: 18px;
-    color: var(--primary);
-    font-weight: 500;
-    :hover {
-      color: var(--primary) !important;
-    }
-  }
-  ul.active {
-    position: fixed;
+function Nav(props) {
+  const NavigationStyled = styled.nav`
+    height: 100px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    text-align: center;
-    width: 100vw;
-    height: calc(100vh - 100px);
-    background-color: white;
-    top: 100px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 100;
-    flex-direction: column;
-    padding-top: 50px;
-  }
-  ul:hover a {
-    color: var(--clr-grey-light);
-  }
-  ul.active li {
-    margin: 0;
-    padding: 20px 0;
-    display: block;
-  }
-  ul.active a {
-    font-size: 25px;
-    color: var(--primary);
-  }
-  li {
-    display: inline;
-    margin-right: 2.5em;
-    :nth-last-child(2) {
-      margin-right: 0;
-    }
-  }
-  li.nav-social {
-    flex-grow: 1;
-    display: none;
-  }
-  .hamburger {
-    padding-top: 5px;
-    fill: var(--primary);
-    display: none;
-  }
-  .nav-social .social {
-    bottom: 50px;
-    left: 0;
-    right: 0;
     position: absolute;
-  }
-  .nav-social a {
-    margin: 0 20px;
-  }
-  @media screen and (max-width: 940px) {
-    padding: 0 20px;
-    .hamburger {
-      display: inline-block !important;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    .Logo-text {
+      font-size: 25px;
+      ${props.theme === "light" ? "color: #fff;" : "color: var(--primary);"}
     }
-    ul {
-      display: none;
+
+    a {
+      font-size: 18px;
+      ${props.theme === "light" ? "color: #fff;" : "color: var(--primary);"}
+
+      font-weight: 500;
+      :hover {
+        ${props.theme === "light"
+          ? "color: #fff!important;"
+          : "color: var(--primary)!important;"}
+      }
     }
-    li.nav-social {
+    ul.active {
+      position: fixed;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      width: 100vw;
+      height: calc(100vh - 100px);
+      background-color: white;
+      top: 100px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 100;
+      flex-direction: column;
+      padding-top: 50px;
+    }
+
+    ul:hover a {
+      ${props.theme === "light"
+        ? "color: var(--offWhite);"
+        : "color: var(--clr-grey-light);"}
+    }
+
+    ul.active li {
+      margin: 0;
+      padding: 20px 0;
       display: block;
     }
-  }
-  /* SAFARI BUG FIX */
-  @media screen and (min-color-index: 0) and(-webkit-min-device-pixel-ratio:0) {
-    .nav-social .social {
-      bottom: 150px;
+    ul.active a {
+      font-size: 25px;
+      color: var(--primary);
     }
-  }
-`;
+    li {
+      display: inline;
+      margin-right: 2.5em;
+      :nth-last-child(2) {
+        margin-right: 0;
+      }
+    }
+    li.nav-social {
+      flex-grow: 1;
+      display: none;
+    }
+    .hamburger {
+      padding-top: 5px;
+      ${props.theme === "light" ? "fill: #fff;" : "fill: var(--primary);"}
+      display: none;
+    }
+    .nav-social .social {
+      bottom: 50px;
+      left: 0;
+      right: 0;
+      position: absolute;
+    }
+    .nav-social a {
+      margin: 0 20px;
+    }
+    @media screen and (max-width: 940px) {
+      padding: 0 20px;
+      .hamburger {
+        display: inline-block !important;
+      }
+      ul {
+        display: none;
+      }
+      li.nav-social {
+        display: block;
+      }
+    }
+    /* SAFARI BUG FIX */
+    @media screen and (min-color-index: 0) and(-webkit-min-device-pixel-ratio:0) {
+      .nav-social .social {
+        bottom: 150px;
+      }
+    }
+  `;
 
-function Nav() {
   const [isActive, setActive] = useState(false);
   if (isActive) {
     document.documentElement.style.overflow = "hidden";

@@ -1,5 +1,6 @@
 /**** Variables ****/
 :root {
+  --offWhite: rgba(255, 255, 255, 0.8);
   --clr-grey-light: #bbbbbb;
   --clr-grey-dark: #222222;
   --primary: #223144;

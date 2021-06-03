@@ -14,6 +14,7 @@ import BannerImage from "./white-section.png";
 import Stories from "./stories.png";
 import Destinations from "./destination-search.png";
 import Profile from "./Profile.png";
+import ProjectIntro from "../../components/ProjectIntro";
 
 const StyledBanner = styled.div`
   background-image: linear-gradient(
@@ -38,9 +39,16 @@ const RightSectionBackground = styled.div`
       #ffffff 100%
     ),
     url("${traveloBg}");
-  background-position: center;
+  height: auto;
+  width: 100%;
   background-size: cover;
-  border-radius: 20px;
+  background-position: center;
+  @media screen and (max-width: 1160px) {
+    margin: 0 auto 100px;
+    padding-top: 7rem;
+  }
+  @media screen and (max-width: 920px) {
+  }
 `;
 function Travelo() {
   return (
@@ -55,6 +63,11 @@ function Travelo() {
           }
           bgImage={traveloBg}
           image={<img src={rainerMockup} alt="Main Project" />}
+        />
+        <ProjectIntro
+          challenge="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dignissimos nesciunt eos voluptates tempora aliquid, minus hic et ipsum beatae."
+          outcome="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dignissimos nesciunt eos voluptates tempora aliquid, minus hic et ipsum beatae."
+          role="Lead UI/UX Designer"
         />
       </RightSectionBackground>
 

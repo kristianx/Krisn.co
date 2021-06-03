@@ -40,7 +40,7 @@ function Projects() {
             "Safebit is an crypto currency wallet mobile application."
           }
           tags={["UI/UX Design", "Mobile Development"]}
-          link={"/project"}
+          link={"/safebit"}
           mockupImage={safebitMockup}
           bgImage={safebitBackground}
           logoImage={safebitLogo}
@@ -66,7 +66,7 @@ function Projects() {
           descriptionText={"Business analysis mobile applicatoin."}
           tags={["UI/UX Design", "Mobile Development"]}
           mockupImage={analitikaMockup}
-          link={"/project"}
+          link={"/analitika"}
           bgImage={analitikaBg}
           logoImage={analitikaLogo}
           large={false}
