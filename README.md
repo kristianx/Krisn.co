@@ -1,5 +1,5 @@
 # Kristian's Space On The Internet
 
-This repo is just a repo.
+Building my space on the internet with Reactjs.
 
 ### `Doman name`
