@@ -1,8 +1,11 @@
 /**** Variables ****/
 :root {
   --offWhite: rgba(255, 255, 255, 0.8);
-  --clr-grey-light: #bbbbbb;
-  --clr-grey-dark: #222222;
+  --clr-grey-light: #6e6e6e;
+  --clr-greyy-light: #bbbbbb;
+  --clr-grey-dark: #505050;
+  --clr-greyy-dark: #222222;
+  --primary: #223144;
   --primary: #223144;
 }
 /**** Global styles ****/
@@ -74,6 +77,12 @@ ul {
     font-size: 50px;
     top: -48px;
     margin-left: -3px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .ultrawide-container {
+    max-width: 1920px;
+    margin: auto;
   }
 }
 

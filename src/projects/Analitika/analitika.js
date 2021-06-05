@@ -15,6 +15,7 @@ import LeftSidebar from "./left-sidebar.png";
 import RightSidebar from "./right-sidebar.png";
 import ComplexChart from "./complex-charts.png";
 import SettingsMock from "./settings.png";
+import BannerImage from "./BannerSection.jpg";
 
 const RightSectionBackground = styled.div`
   background-image: url("${BgImage}");
@@ -28,6 +29,14 @@ const RightSectionBackground = styled.div`
   }
   @media screen and (max-width: 920px) {
   }
+`;
+
+const StyledBanner = styled.div`
+  background-image: url("${BannerImage}");
+  height: 750px;
+  width: 100%;
+  background-size: cover;
+  margin: 50px auto;
 `;
 
 function Analitika() {
@@ -85,6 +94,9 @@ function Analitika() {
           <img src={RightSidebar} alt="Right Sidebar" />,
         ]}
       />
+      <StyledBanner>
+        <div></div>
+      </StyledBanner>
       <SplitScroll
         services={"Mockups"}
         title={"Complex Charts"}

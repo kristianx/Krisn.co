@@ -2,12 +2,12 @@ import styled from "styled-components";
 
 const SplitStaticSection = styled.section`
   display: flex;
-  width: 90vw;
+  width: 90%;
+  margin: auto;
   min-height: 80vh;
   height: auto;
   align-items: center;
   justify-content: center;
-  margin: auto;
   //Pogledati ovo
   .light-theme {
     color: white;
@@ -20,7 +20,7 @@ const SplitStaticSection = styled.section`
     }
   }
   .intro {
-    width: 50%;
+    width: 40%;
     margin-left: 3em;
   }
   .intro h1 {
@@ -56,7 +56,7 @@ const SplitStaticSection = styled.section`
       max-width: 100%;
     }
     .image {
-      text-align: center;
+      text-align: right;
     }
   }
 
@@ -65,7 +65,7 @@ const SplitStaticSection = styled.section`
     border: 0;
     height: auto;
     min-height: 800px;
-    width: 50%;
+    width: 85%;
   }
   @media screen and (max-width: 1455px) {
     .intro {
@@ -73,12 +73,15 @@ const SplitStaticSection = styled.section`
     }
   }
   @media screen and (max-width: 1160px) {
+    padding: 80px 0;
     flex-direction: column;
-    height: 70vh;
-
+    height: auto;
     justify-content: space-evenly;
     .intro {
+      padding-bottom: 100px;
+      width: 100%;
       p {
+        width: 100%;
         max-width: 100%;
       }
     }
@@ -90,26 +93,7 @@ const SplitStaticSection = styled.section`
     }
   }
   @media screen and (max-width: 900px) {
-    min-height: 60vh;
-    height: 65vh;
-    .services span {
-      font-size: 0.9em;
-      letter-spacing: 0.1em;
-    }
-    .services span::before {
-      width: 1.5em;
-      margin-right: 0.5em;
-      top: -0.2em;
-    }
     .intro {
-      margin-left: 0;
-      width: 100%;
-      height: 30%;
-      display: flex;
-      flex-direction: column;
-
-      justify-content: center;
-      text-align: left;
       .services {
         font-size: 14px;
       }
@@ -121,6 +105,16 @@ const SplitStaticSection = styled.section`
         font-size: 18px;
       }
     }
+    .services span {
+      font-size: 0.9em;
+      letter-spacing: 0.1em;
+    }
+    .services span::before {
+      width: 1.5em;
+      margin-right: 0.5em;
+      top: -0.2em;
+    }
+
     .right-section-item {
       width: 100%;
       img {

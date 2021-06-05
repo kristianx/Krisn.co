@@ -50,9 +50,18 @@ const RightSectionBackground = styled.div`
   @media screen and (max-width: 920px) {
   }
 `;
+
+const TraveloStyled = styled.div`
+  .right-section-items {
+    img {
+      filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.051));
+    }
+  }
+`;
+
 function Travelo() {
   return (
-    <div className="travelo-project">
+    <TraveloStyled className="travelo-project">
       <Nav />
       <RightSectionBackground>
         <SplitStatic
@@ -115,14 +124,13 @@ function Travelo() {
       <StyledBanner>
         <div></div>
       </StyledBanner>
-
-      <SplitStatic
+      <SplitScroll
         services={"Prototype"}
         title={"Why not try it out?"}
         description={
           "I've implemented a figma prototype here so you can get a feel of Travelo"
         }
-        image={[
+        right={[
           <iframe
             title="Prototip"
             className="prototype"
@@ -136,7 +144,7 @@ function Travelo() {
       <div className="container mg-tp-200">
         <Footer />
       </div>
-    </div>
+    </TraveloStyled>
   );
 }
 

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const SplitScrollSection = styled.section`
   /*** Header ***/
-  width: 90vw;
+  width: 90%;
   margin: auto;
   vertical-align: top;
   .intro {
@@ -73,12 +73,19 @@ const SplitScrollSection = styled.section`
     width: 80%;
     height: auto;
     max-height: 95%;
+    object-fit: contain;
   }
   .right-section-items div p {
     width: 80%;
     color: white;
     font-size: 18px;
     line-height: 30px;
+  }
+
+  .prototype {
+    height: 80%;
+    width: 80%;
+    border: none;
   }
 
   @media screen and (max-width: 1455px) {
@@ -121,6 +128,10 @@ const SplitScrollSection = styled.section`
           height: auto;
           margin: 40px auto;
         }
+      }
+      .prototype {
+        height: 80vh;
+        width: 80%;
       }
     }
   }

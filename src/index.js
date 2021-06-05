@@ -2,11 +2,14 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./styles/main.css";
 import App from "./App";
+import GlobalStyleWrapper from "./styles/GlobalStyleWrapper.js";
 //import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <GlobalStyleWrapper className="ultrawide-container">
+      <App />
+    </GlobalStyleWrapper>
   </React.StrictMode>,
   document.getElementById("root")
 );

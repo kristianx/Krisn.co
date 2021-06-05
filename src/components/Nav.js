@@ -14,6 +14,9 @@ function Nav(props) {
     top: 0;
     right: 0;
     left: 0;
+    &.active {
+      background-color: #fff;
+    }
 
     .Logo-text {
       font-size: 25px;
@@ -119,7 +122,9 @@ function Nav(props) {
   };
 
   return (
-    <NavigationStyled className="nav-section container">
+    <NavigationStyled
+      className={`nav-section container ${isActive ? "active" : null}`}
+    >
       <h1 className="Logo-text">Kristian Cupurdija</h1>
 
       <ul className={isActive ? "active" : null}>

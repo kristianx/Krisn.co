@@ -8,12 +8,14 @@ function ProjectIntro(props) {
     grid-gap: 20px;
     h2 {
       font-size: 22px;
-      ${props.theme === "light" ? "color: #fff;" : "color: var(--primary);"}
+      ${props.theme === "light"
+        ? "color: #fff;"
+        : "color: var(--clr-grey-dark);"}
     }
     p {
       ${props.theme === "light"
         ? "color: var(--offWhite);"
-        : "color: var(--clr-grey-dark);"}
+        : "color: var(--clr-grey-light);"}
       font-size: 18px;
     }
     .challenge {
