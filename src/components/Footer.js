@@ -88,7 +88,7 @@ function Footer() {
   return (
     <FooterSection className="footer container mg-tp-100">
       <h1 className="section-title">Let's connect</h1>
-      <h1 className="email">hello@kristian.co</h1>
+      <h1 className="email">hi@krisn.co</h1>
       <hr />
       <p className="about-me">
         I love to make things. I have a passion for aesthetics and simple

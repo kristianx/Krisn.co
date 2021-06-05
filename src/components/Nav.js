@@ -125,17 +125,19 @@ function Nav(props) {
     <NavigationStyled
       className={`nav-section container ${isActive ? "active" : null}`}
     >
-      <h1 className="Logo-text">Kristian Cupurdija</h1>
+      <a href="/">
+        <h1 className="Logo-text">Kristian Cupurdija</h1>
+      </a>
 
       <ul className={isActive ? "active" : null}>
         <li>
-          <NavLink to="/">Home</NavLink>
+          <NavLink to="/">Projects</NavLink>
         </li>
         <li>
           <NavLink to="/blog">Blog</NavLink>
         </li>
         <li>
-          <NavLink to="/casestudies">Case Studies</NavLink>
+          <NavLink to="/about">About</NavLink>
         </li>
         <li className="nav-social">
           <Social />
