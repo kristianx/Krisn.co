@@ -2,4 +2,4 @@
 
 Building my space on the internet with Reactjs.
 
-### `Doman name`
+### `Krisn.co`

@@ -1,8 +1,8 @@
 import Project from "./Project";
-import styled from "styled-components";
+import { motion } from "framer-motion";
 
 /*Safebit imports*/
-import safebitLogo from "../img/safebit-logo.png";
+import safebitLogo from "../img/safebitlogo.svg";
 import safebitMockup from "../img/safebit-mockup.svg";
 import safebitadditional from "../img/safebit-additional.svg";
 import safebitBackground from "../img/safebit-bg.png";
@@ -19,22 +19,17 @@ import traveloBg from "../img/traveloBg.png";
 import traveloMockup from "../img/traveloMockup.png";
 import traveloLogo from "../img/traveloLogo.svg";
 
-const SwipeNotice = styled.div`
-  font-size: 22px;
-  font-weight: 600;
-  text-align: center;
-  margin-top: 20px;
-  display: none;
-  @media screen and (max-width: 940px) {
-    display: block;
-  }
-`;
+const transition = { duration: 0.7, ease: [0.43, 0.13, 0.23, 0.96] };
 
 function Projects() {
   return (
-    <div className="container mg-tp-100 mg-bt-200">
+    <motion.div className="container mg-tp-100 mg-bt-200">
       <h1 className="section-title">Projects</h1>
-      <section className="projects">
+      <section
+        className="projects"
+        exit={{ opacity: 0 }}
+        transition={transition}
+      >
         <Project
           descriptionText={
             "Safebit is an crypto currency wallet mobile application."
@@ -50,6 +45,7 @@ function Projects() {
           }
           customClass={"safebit"}
         />
+
         <Project
           descriptionText={
             "Straight-to-the-point mobile interface and backend management system following brand guidelines."
@@ -85,8 +81,7 @@ function Projects() {
           customClass={"travelo dark-text"}
         />
       </section>
-      <SwipeNotice>{"Swipe right >"}</SwipeNotice>
-    </div>
+    </motion.div>
   );
 }
 

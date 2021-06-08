@@ -20,6 +20,8 @@ import Addresses from "./Addresses.png";
 import Additional1 from "./Additional1.png";
 import Additional2 from "./Additional2.png";
 import Additional3 from "./Additional3.png";
+import { motion } from "framer-motion";
+import { pageVariants } from "../../styles/Animation";
 
 const RightSectionBackground = styled.div`
   background-image: url("${SafeBitBg}");
@@ -37,7 +39,14 @@ const RightSectionBackground = styled.div`
 `;
 function SafeBit() {
   return (
-    <div className="safebit-project">
+    <motion.div
+      className="safebit-project"
+      variants={pageVariants}
+      animate="visible"
+      exit="hidden"
+      initial="hidden"
+      transition="transition"
+    >
       <Nav theme="light" />
       <RightSectionBackground>
         <SplitStatic
@@ -150,7 +159,7 @@ function SafeBit() {
       <div className="container mg-tp-200">
         <Footer />
       </div>
-    </div>
+    </motion.div>
   );
 }
 

@@ -17,9 +17,19 @@ const FooterSection = styled.footer`
     font-size: 50px;
     cursor: pointer;
   }
-  .email:hover {
-    text-decoration: underline;
+  .email a {
+    color: white;
   }
+  .email:hover a {
+    text-decoration: underline !important;
+    background: linear-gradient(-45deg, #e73c7e, #23a6d5, #23d5ab);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+  }
+
   hr {
     width: 200px;
     border: 2px solid white;
@@ -86,23 +96,27 @@ const FooterSection = styled.footer`
 
 function Footer() {
   return (
-    <FooterSection className="footer container mg-tp-100">
-      <h1 className="section-title">Let's connect</h1>
-      <h1 className="email">hi@krisn.co</h1>
-      <hr />
-      <p className="about-me">
-        I love to make things. I have a passion for aesthetics and simple
-        elegance. I possess a growth and curious mindset that reflects in
-        everything I do as a designer.{" "}
-      </p>
-      <Social />
-      <p className="Copyright">Kristian Cupurdija ©2021</p>
+    <div>
+      <FooterSection className="footer container mg-tp-100">
+        <h1 className="section-title">Let's connect</h1>
+        <h1 className="email">
+          <a href="mailto:hi@krisn.co">hi@krisn.co</a>
+        </h1>
+        <hr />
+        <p className="about-me">
+          I love to make things. I have a passion for aesthetics and simple
+          elegance. I possess a growth and curious mindset that reflects in
+          everything I do as a designer.{" "}
+        </p>
+        <Social />
+        <p className="Copyright">Kristian Cupurdija ©2021</p>
 
-      <div className="image-footer">
-        <img src={bgSvg} className="stars-bg" alt="stars-bg" />
-        <img src={portrait} alt="portrait" />
-      </div>
-    </FooterSection>
+        <div className="image-footer">
+          <img src={bgSvg} className="stars-bg" alt="stars-bg" />
+          <img src={portrait} alt="portrait" />
+        </div>
+      </FooterSection>
+    </div>
   );
 }
 

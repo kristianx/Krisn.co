@@ -1,4 +1,6 @@
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import React from "react";
+import { Route, Switch, useLocation } from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
 //Pages
 import Home from "./pages/Home";
 import Blog from "./pages/Blog";
@@ -11,9 +13,10 @@ import Analitika from "./projects/Analitika/analitika";
 import Safebit from "./projects/Safebit/safebit";
 
 function App() {
+  const location = useLocation();
   return (
-    <BrowserRouter>
-      <Switch>
+    <AnimatePresence exitBeforeEnter>
+      <Switch location={location} key={location.pathname}>
         <Route component={Home} path="/" exact />
         <Route component={Blog} path="/blog/" />
         <Route component={About} path="/About" />
@@ -23,7 +26,7 @@ function App() {
         <Route component={Analitika} path="/analitika" />
         <Route component={Safebit} path="/safebit" />
       </Switch>
-    </BrowserRouter>
+    </AnimatePresence>
   );
 }
 

@@ -103,6 +103,12 @@ const SplitScrollSection = styled.section`
         top: 0;
         .services {
           font-size: 14px;
+          background: linear-gradient(45deg, #e73c7e, #23a6d5, #23d5ab);
+          background-clip: text;
+          -webkit-background-clip: text;
+          -moz-background-clip: text;
+          -moz-text-fill-color: transparent;
+          -webkit-text-fill-color: transparent;
         }
         h1 {
           font-size: 35px;
@@ -112,6 +118,7 @@ const SplitScrollSection = styled.section`
           font-size: 18px;
         }
       }
+
       .services span {
         font-size: 0.9em;
         letter-spacing: 0.1em;
@@ -120,6 +127,7 @@ const SplitScrollSection = styled.section`
         width: 1.5em;
         margin-right: 0.5em;
         top: -0.2em;
+        background: linear-gradient(-45deg, #e73c7e, #23a6d5);
       }
       .right-section-items {
         width: 100%;
@@ -133,6 +141,11 @@ const SplitScrollSection = styled.section`
         height: 80vh;
         width: 80%;
       }
+    }
+  }
+  @media screen and (max-width: 700px) {
+    .right-section-items div img {
+      width: 100%;
     }
   }
 `;

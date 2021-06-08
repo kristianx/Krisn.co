@@ -4,6 +4,8 @@ import SplitScroll from "../../components/SplitScroll";
 import SplitStatic from "../../components/SplitStatic";
 import ProjectIntro from "../../components/ProjectIntro";
 import styled from "styled-components";
+import { pageVariants } from "../../styles/Animation";
+import { motion } from "framer-motion";
 //Images for intro
 import Mainimage from "../../img/rainerMockup.png";
 import BgImage from "../../img/rainerBg.png";
@@ -63,146 +65,154 @@ const StyledHeader = styled.div`
 
 function Rainer() {
   return (
-    <RainerStyled className="rainer-project">
-      <Nav />
-      <RightSectionBackground>
-        <SplitStatic
-          services={"UI/UX Design"}
-          title={"Taxi Rainer"}
+    <motion.div
+      variants={pageVariants}
+      animate="visible"
+      exit="hidden"
+      initial="hidden"
+      transition="transition"
+    >
+      <RainerStyled className="rainer-project">
+        <Nav />
+        <RightSectionBackground>
+          <SplitStatic
+            services={"UI/UX Design"}
+            title={"Taxi Rainer"}
+            description={
+              "Rainer is a taxi agency providing transportation and taxi services. Our passengers can enjoy safe travel with our professional drivers."
+            }
+            image={<img src={Mainimage} alt="Main Project" />}
+          />
+          <ProjectIntro
+            challenge="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dignissimos nesciunt eos voluptates tempora aliquid, minus hic et ipsum beatae."
+            outcome="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dignissimos nesciunt eos voluptates tempora aliquid, minus hic et ipsum beatae."
+            role="Lead UI/UX Designer"
+          />
+        </RightSectionBackground>
+        <SplitScroll
+          services={"Passengers App"}
+          title={"Onboarding"}
+          description={"The goal is to finish your booking in 3 taps"}
+          right={[
+            <img className="gif-animation" src={Animacija} alt="Onboarding" />,
+            <img src={Login} alt="Login" />,
+          ]}
+        />
+        <StyledHeader className="container">
+          <h2>Passengers Experience</h2>
+        </StyledHeader>
+        <SplitScroll
+          services={"Passengers App"}
+          title={"Tap 1"}
           description={
-            "Rainer is a taxi agency providing transportation and taxi services. Our passengers can enjoy safe travel with our professional drivers."
+            "The first thing you will see when you open a app is the onboarding screen which will guide you to make an account or sign in with already existing one"
           }
-          image={<img src={Mainimage} alt="Main Project" />}
+          right={[<img src={Tap1} alt="Tap1" />]}
         />
-        <ProjectIntro
-          challenge="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dignissimos nesciunt eos voluptates tempora aliquid, minus hic et ipsum beatae."
-          outcome="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dignissimos nesciunt eos voluptates tempora aliquid, minus hic et ipsum beatae."
-          role="Lead UI/UX Designer"
+        <SplitScroll
+          services={"Passengers App"}
+          title={"Tap 2"}
+          description={
+            "The first thing you will see when you open a app is the onboarding screen which will guide you to make an account or sign in with already existing one"
+          }
+          right={[<img src={Tap2} alt="Tap2" />]}
         />
-      </RightSectionBackground>
-      <SplitScroll
-        services={"Passengers App"}
-        title={"Onboarding"}
-        description={"The goal is to finish your booking in 3 taps"}
-        right={[
-          <img className="gif-animation" src={Animacija} alt="Onboarding" />,
-          <img src={Login} alt="Login" />,
-        ]}
-      />
-      <StyledHeader className="container">
-        <h2>Passengers Experience</h2>
-      </StyledHeader>
-      <SplitScroll
-        services={"Passengers App"}
-        title={"Tap 1"}
-        description={
-          "The first thing you will see when you open a app is the onboarding screen which will guide you to make an account or sign in with already existing one"
-        }
-        right={[<img src={Tap1} alt="Tap1" />]}
-      />
-      <SplitScroll
-        services={"Passengers App"}
-        title={"Tap 2"}
-        description={
-          "The first thing you will see when you open a app is the onboarding screen which will guide you to make an account or sign in with already existing one"
-        }
-        right={[<img src={Tap2} alt="Tap2" />]}
-      />
-      <SplitScroll
-        services={"Passengers App"}
-        title={"Tap 3"}
-        description={
-          "The first thing you will see when you open a app is the onboarding screen which will guide you to make an account or sign in with already existing one"
-        }
-        right={[<img src={Tap3} alt="Tap3" />]}
-      />
-      <SplitScroll
-        services={"Passengers App"}
-        title={"Your driver is on the way"}
-        description={
-          "The first thing you will see when you open a app is the onboarding screen which will guide you to make an account or sign in with already existing one"
-        }
-        right={[<img src={DriverOnWay} alt="DriverOnWay" />]}
-      />
-      <SplitScroll
-        services={"Passengers App"}
-        title={"Leave your feedback"}
-        description={
-          "The first thing you will see when you open a app is the onboarding screen which will guide you to make an account or sign in with already existing one"
-        }
-        right={[<img src={Feedback} alt="Feedback" />]}
-      />{" "}
-      <SplitScroll
-        services={"Passengers App"}
-        title={"New Payment"}
-        description={
-          "The first thing you will see when you open a app is the onboarding screen which will guide you to make an account or sign in with already existing one"
-        }
-        right={[<img src={NewPayment} alt="NewPayment" />]}
-      />{" "}
-      <SplitScroll
-        services={"Passengers App"}
-        title={"My Trips"}
-        description={
-          "The first thing you will see when you open a app is the onboarding screen which will guide you to make an account or sign in with already existing one"
-        }
-        right={[<img src={MyTrips} alt="MyTrips" />]}
-      />
-      <SplitScroll
-        services={"Passengers App"}
-        title={"Settings & Sidebar"}
-        description={
-          "The first thing you will see when you open a app is the onboarding screen which will guide you to make an account or sign in with already existing one"
-        }
-        right={[<img src={Settings} alt="Settings" />]}
-      />
-      <StyledHeader className="container">
-        <h2>Driver's Experience</h2>
-      </StyledHeader>
-      <SplitScroll
-        services={"Drivers App"}
-        title={"Main Screen"}
-        description={
-          "The first thing you will see when you open a app is the onboarding screen which will guide you to make an account or sign in with already existing one"
-        }
-        right={[<img src={DriverDash} alt="Settings" />]}
-      />
-      <SplitScroll
-        services={"Drivers App"}
-        title={"Passenger Approach"}
-        description={
-          "The first thing you will see when you open a app is the onboarding screen which will guide you to make an account or sign in with already existing one"
-        }
-        right={[<img src={DriverInvite} alt="Settings" />]}
-      />
-      <SplitScroll
-        services={"Drivers App"}
-        title={"Riding"}
-        description={
-          "The first thing you will see when you open a app is the onboarding screen which will guide you to make an account or sign in with already existing one"
-        }
-        right={[<img src={DriverRiding} alt="Settings" />]}
-      />
-      <SplitScroll
-        services={"Drivers App"}
-        title={"Invoice"}
-        description={
-          "The first thing you will see when you open a app is the onboarding screen which will guide you to make an account or sign in with already existing one"
-        }
-        right={[<img src={DriverInvoice} alt="Settings" />]}
-      />
-      <SplitScroll
-        services={"Drivers App"}
-        title={"Summary"}
-        description={
-          "The first thing you will see when you open a app is the onboarding screen which will guide you to make an account or sign in with already existing one"
-        }
-        right={[<img src={DriverSummary} alt="Settings" />]}
-      />
-      <div className="container mg-tp-200">
-        <Footer />
-      </div>
-    </RainerStyled>
+        <SplitScroll
+          services={"Passengers App"}
+          title={"Tap 3"}
+          description={
+            "The first thing you will see when you open a app is the onboarding screen which will guide you to make an account or sign in with already existing one"
+          }
+          right={[<img src={Tap3} alt="Tap3" />]}
+        />
+        <SplitScroll
+          services={"Passengers App"}
+          title={"Your driver is on the way"}
+          description={
+            "The first thing you will see when you open a app is the onboarding screen which will guide you to make an account or sign in with already existing one"
+          }
+          right={[<img src={DriverOnWay} alt="DriverOnWay" />]}
+        />
+        <SplitScroll
+          services={"Passengers App"}
+          title={"Leave your feedback"}
+          description={
+            "The first thing you will see when you open a app is the onboarding screen which will guide you to make an account or sign in with already existing one"
+          }
+          right={[<img src={Feedback} alt="Feedback" />]}
+        />{" "}
+        <SplitScroll
+          services={"Passengers App"}
+          title={"New Payment"}
+          description={
+            "The first thing you will see when you open a app is the onboarding screen which will guide you to make an account or sign in with already existing one"
+          }
+          right={[<img src={NewPayment} alt="NewPayment" />]}
+        />{" "}
+        <SplitScroll
+          services={"Passengers App"}
+          title={"My Trips"}
+          description={
+            "The first thing you will see when you open a app is the onboarding screen which will guide you to make an account or sign in with already existing one"
+          }
+          right={[<img src={MyTrips} alt="MyTrips" />]}
+        />
+        <SplitScroll
+          services={"Passengers App"}
+          title={"Settings & Sidebar"}
+          description={
+            "The first thing you will see when you open a app is the onboarding screen which will guide you to make an account or sign in with already existing one"
+          }
+          right={[<img src={Settings} alt="Settings" />]}
+        />
+        <StyledHeader className="container">
+          <h2>Driver's Experience</h2>
+        </StyledHeader>
+        <SplitScroll
+          services={"Drivers App"}
+          title={"Main Screen"}
+          description={
+            "The first thing you will see when you open a app is the onboarding screen which will guide you to make an account or sign in with already existing one"
+          }
+          right={[<img src={DriverDash} alt="Settings" />]}
+        />
+        <SplitScroll
+          services={"Drivers App"}
+          title={"Passenger Approach"}
+          description={
+            "The first thing you will see when you open a app is the onboarding screen which will guide you to make an account or sign in with already existing one"
+          }
+          right={[<img src={DriverInvite} alt="Settings" />]}
+        />
+        <SplitScroll
+          services={"Drivers App"}
+          title={"Riding"}
+          description={
+            "The first thing you will see when you open a app is the onboarding screen which will guide you to make an account or sign in with already existing one"
+          }
+          right={[<img src={DriverRiding} alt="Settings" />]}
+        />
+        <SplitScroll
+          services={"Drivers App"}
+          title={"Invoice"}
+          description={
+            "The first thing you will see when you open a app is the onboarding screen which will guide you to make an account or sign in with already existing one"
+          }
+          right={[<img src={DriverInvoice} alt="Settings" />]}
+        />
+        <SplitScroll
+          services={"Drivers App"}
+          title={"Summary"}
+          description={
+            "The first thing you will see when you open a app is the onboarding screen which will guide you to make an account or sign in with already existing one"
+          }
+          right={[<img src={DriverSummary} alt="Settings" />]}
+        />
+        <div className="container mg-tp-200">
+          <Footer />
+        </div>
+      </RainerStyled>
+    </motion.div>
   );
 }
 

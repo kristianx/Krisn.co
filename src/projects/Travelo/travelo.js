@@ -3,6 +3,8 @@ import Footer from "../../components/Footer";
 import SplitScroll from "../../components/SplitScroll";
 import SplitStatic from "../../components/SplitStatic";
 import styled from "styled-components";
+import React from "react";
+
 //Images for projects
 import rainerMockup from "../../img/rainerMockup.png";
 
@@ -15,6 +17,8 @@ import Stories from "./stories.png";
 import Destinations from "./destination-search.png";
 import Profile from "./Profile.png";
 import ProjectIntro from "../../components/ProjectIntro";
+import { motion } from "framer-motion";
+import { pageVariants } from "../../styles/Animation";
 
 const StyledBanner = styled.div`
   background-image: linear-gradient(
@@ -58,94 +62,101 @@ const TraveloStyled = styled.div`
     }
   }
 `;
+export default class Travelo extends React.Component {
+  render() {
+    return (
+      <motion.div
+        variants={pageVariants}
+        animate="visible"
+        exit="hidden"
+        initial="hidden"
+        transition="transition"
+      >
+        <TraveloStyled className="travelo-project">
+          <Nav />
+          <RightSectionBackground>
+            <SplitStatic
+              services={"UI/UX Design, Branding, Prototype"}
+              title={"Travelo"}
+              description={
+                "Travelo is an online travel platform connecting local agencies and passengers. Travelers can explore the best experiences they can enjoy, get discounts, and compare prices."
+              }
+              bgImage={traveloBg}
+              image={<img src={rainerMockup} alt="Main Project" />}
+            />
+            <ProjectIntro
+              challenge="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dignissimos nesciunt eos voluptates tempora aliquid, minus hic et ipsum beatae."
+              outcome="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dignissimos nesciunt eos voluptates tempora aliquid, minus hic et ipsum beatae."
+              role="Lead UI/UX Designer"
+            />
+          </RightSectionBackground>
 
-function Travelo() {
-  return (
-    <TraveloStyled className="travelo-project">
-      <Nav />
-      <RightSectionBackground>
-        <SplitStatic
-          services={"UI/UX Design, Branding, Prototype"}
-          title={"Travelo"}
-          description={
-            "Travelo is an online travel platform connecting local agencies and passengers. Travelers can explore the best experiences they can enjoy, get discounts, and compare prices."
-          }
-          bgImage={traveloBg}
-          image={<img src={rainerMockup} alt="Main Project" />}
-        />
-        <ProjectIntro
-          challenge="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dignissimos nesciunt eos voluptates tempora aliquid, minus hic et ipsum beatae."
-          outcome="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dignissimos nesciunt eos voluptates tempora aliquid, minus hic et ipsum beatae."
-          role="Lead UI/UX Designer"
-        />
-      </RightSectionBackground>
+          <SplitScroll
+            services={"Mockups"}
+            title={"Onboarding"}
+            description={
+              "The first thing you will see when you open a app is the onboarding screen which will guide you to make an account or sign in with already existing one"
+            }
+            right={[
+              <img src={Onboarding1} alt="Onboarding" />,
+              <img src={Onboarding2} alt="Onboarding" />,
+            ]}
+          />
 
-      <SplitScroll
-        services={"Mockups"}
-        title={"Onboarding"}
-        description={
-          "The first thing you will see when you open a app is the onboarding screen which will guide you to make an account or sign in with already existing one"
-        }
-        right={[
-          <img src={Onboarding1} alt="Onboarding" />,
-          <img src={Onboarding2} alt="Onboarding" />,
-        ]}
-      />
+          <SplitScroll
+            services={"Mockups"}
+            title={"Dashboard & Search"}
+            description={
+              "The first thing you will see when you open a app is the onboarding screen which will guide you to make an account or sign in with already existing one"
+            }
+            right={[
+              <img src={Dashboard} alt="Onboarding" />,
+              <img src={Destinations} alt="Onboarding" />,
+            ]}
+          />
 
-      <SplitScroll
-        services={"Mockups"}
-        title={"Dashboard & Search"}
-        description={
-          "The first thing you will see when you open a app is the onboarding screen which will guide you to make an account or sign in with already existing one"
-        }
-        right={[
-          <img src={Dashboard} alt="Onboarding" />,
-          <img src={Destinations} alt="Onboarding" />,
-        ]}
-      />
+          <SplitScroll
+            services={"Mockups"}
+            title={"Stories"}
+            description={
+              "The first thing you will see when you open a app is the onboarding screen which will guide you to make an account or sign in with already existing one"
+            }
+            right={[<img src={Stories} alt="Onboarding" />]}
+          />
+          <SplitScroll
+            services={"Mockups"}
+            title={"Profile"}
+            description={
+              "The first thing you will see when you open a app is the onboarding screen which will guide you to make an account or sign in with already existing one"
+            }
+            right={[<img src={Profile} alt="Onboarding" />]}
+          />
 
-      <SplitScroll
-        services={"Mockups"}
-        title={"Stories"}
-        description={
-          "The first thing you will see when you open a app is the onboarding screen which will guide you to make an account or sign in with already existing one"
-        }
-        right={[<img src={Stories} alt="Onboarding" />]}
-      />
-      <SplitScroll
-        services={"Mockups"}
-        title={"Profile"}
-        description={
-          "The first thing you will see when you open a app is the onboarding screen which will guide you to make an account or sign in with already existing one"
-        }
-        right={[<img src={Profile} alt="Onboarding" />]}
-      />
+          <StyledBanner>
+            <div></div>
+          </StyledBanner>
+          <SplitScroll
+            services={"Prototype"}
+            title={"Why not try it out?"}
+            description={
+              "I've implemented a figma prototype here so you can get a feel of Travelo"
+            }
+            right={[
+              <iframe
+                title="Prototip"
+                className="prototype"
+                //width="550"
+                //height="800"
+                src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FYYt7PVDgedy9VB6j4bb5DA%2FTravelo-Seminarski%3Fpage-id%3D0%253A1%26scaling%3Dscale-down%26node-id%3D129%253A8171&hide-ui=1"
+              ></iframe>,
+            ]}
+          />
 
-      <StyledBanner>
-        <div></div>
-      </StyledBanner>
-      <SplitScroll
-        services={"Prototype"}
-        title={"Why not try it out?"}
-        description={
-          "I've implemented a figma prototype here so you can get a feel of Travelo"
-        }
-        right={[
-          <iframe
-            title="Prototip"
-            className="prototype"
-            //width="550"
-            //height="800"
-            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FYYt7PVDgedy9VB6j4bb5DA%2FTravelo-Seminarski%3Fpage-id%3D0%253A1%26scaling%3Dscale-down%26node-id%3D129%253A8171&hide-ui=1"
-          ></iframe>,
-        ]}
-      />
-
-      <div className="container mg-tp-200">
-        <Footer />
-      </div>
-    </TraveloStyled>
-  );
+          <div className="container mg-tp-200">
+            <Footer />
+          </div>
+        </TraveloStyled>
+      </motion.div>
+    );
+  }
 }
-
-export default Travelo;

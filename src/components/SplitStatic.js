@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 const SplitStaticSection = styled.section`
   display: flex;
@@ -113,6 +114,7 @@ const SplitStaticSection = styled.section`
       width: 1.5em;
       margin-right: 0.5em;
       top: -0.2em;
+      background: linear-gradient(45deg, #e73c7e, #23a6d5, #23d5ab);
     }
 
     .right-section-item {
@@ -129,22 +131,24 @@ const SplitStaticSection = styled.section`
 
 function SplitStatic(props) {
   return (
-    <SplitStaticSection className="split-static">
-      <div className={props.lightTheme ? "intro light-theme " : "intro "}>
-        {props.services ? (
-          <div className="services">
-            <span>{props.services}</span>
-          </div>
-        ) : (
-          ""
-        )}
-        <h1>{props.title}</h1>
-        <p>{props.description}</p>
-      </div>
-      <div className="right-section-item">
-        <div className="image">{props.image}</div>
-      </div>
-    </SplitStaticSection>
+    <motion.div>
+      <SplitStaticSection className="split-static">
+        <div className={props.lightTheme ? "intro light-theme " : "intro "}>
+          {props.services ? (
+            <div className="services">
+              <span>{props.services}</span>
+            </div>
+          ) : (
+            ""
+          )}
+          <h1>{props.title}</h1>
+          <p>{props.description}</p>
+        </div>
+        <div className="right-section-item">
+          <div className="image">{props.image}</div>
+        </div>
+      </SplitStaticSection>
+    </motion.div>
   );
 }
 

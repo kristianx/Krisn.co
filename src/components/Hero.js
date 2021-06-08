@@ -6,7 +6,8 @@ const HeroSection = styled.div`
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 100px 0 20px;
+  padding: 100px 30px 20px;
+  transition: color 1s ease;
 
   h1.Hero-text {
     font-size: 40px;
@@ -22,10 +23,16 @@ function Hero() {
   return (
     <HeroSection className="Hero">
       <h1 className="Hero-text">
-        Hi there! I help <span className="text-dark">startups</span> and{" "}
+        Hi there! I help{" "}
         <span className="text-dark">
-          small <br />
-          businesses
+          <b>startups</b>
+        </span>{" "}
+        and{" "}
+        <span className="text-dark">
+          <b>
+            small <br />
+            businesses
+          </b>
         </span>{" "}
         create growth-driven <br />
         products.
