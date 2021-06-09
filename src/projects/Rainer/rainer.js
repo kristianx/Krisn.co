@@ -61,17 +61,21 @@ const StyledHeader = styled.div`
   h2 {
     font-size: 2.5em;
     font-weight: 600;
-    border-bottom: 2px solid;
-    border-image-slice: 1;
-    border-width: 2px;
-    border-image-source: linear-gradient(-45deg, #e73c7e, #23a6d5, #23d5ab);
     padding-bottom: 20px;
     padding-left: 15px;
+  }
+  hr {
+    width: 60%;
+    margin: auto;
+    border-image-slice: 1;
+    border-width: 1px;
+    border-image-source: linear-gradient(-45deg, #e73c7e, #23a6d5, #23d5ab);
   }
   @media screen and (max-width: 700px) {
     h2 {
       font-weight: 600;
       font-size: 30px;
+      padding-left: 0;
     }
   }
 `;
@@ -113,6 +117,7 @@ function Rainer() {
         />
         <StyledHeader className="container">
           <h2>Passengers Experience</h2>
+          <hr />
         </StyledHeader>
         <SplitScroll
           services={"Passengers App"}
@@ -180,6 +185,7 @@ function Rainer() {
         />
         <StyledHeader className="container">
           <h2>Driver's Experience</h2>
+          <hr />
         </StyledHeader>
         <SplitScroll
           services={"Drivers App"}
