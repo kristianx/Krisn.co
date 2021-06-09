@@ -25,18 +25,17 @@ const SplitStaticSection = styled.section`
     margin-left: 3em;
   }
   .intro h1 {
-    font-size: 60px;
+    font-size: 65px;
+    font-weight: 600;
     color: var(--clr-grey-dark);
-    line-height: 1em;
   }
   .intro p {
     font-size: 22px;
-    max-width: 25em;
+    max-width: 22em;
     color: var(--clr-grey-dark);
   }
   .services span {
-    font-size: 1em;
-    font-weight: 550;
+    font-weight: 600;
     letter-spacing: 0.15em;
     text-transform: uppercase;
   }
@@ -46,7 +45,7 @@ const SplitStaticSection = styled.section`
     content: "";
     height: 0.2em;
     position: relative;
-    margin-right: 1.5em;
+    margin-right: 1em;
     display: inline-block;
     background: var(--clr-grey-light);
   }
@@ -96,10 +95,10 @@ const SplitStaticSection = styled.section`
   @media screen and (max-width: 900px) {
     .intro {
       .services {
-        font-size: 14px;
+        font-size: 15px;
       }
       h1 {
-        font-size: 35px;
+        font-size: 45px;
       }
       p {
         max-width: 100%;

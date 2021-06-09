@@ -13,8 +13,19 @@ const FooterSection = styled.footer`
   padding: 80px 55% 80px 80px;
   margin-bottom: 80px;
   position: relative;
+  .email,
+  p,
+  .social,
+  .copyright {
+    z-index: 5;
+  }
+  div:last-child {
+    z-index: 1;
+  }
+
   .email {
     font-size: 50px;
+    font-weight: 600;
     cursor: pointer;
   }
   .email a {
@@ -36,7 +47,7 @@ const FooterSection = styled.footer`
   }
   .about-me {
     font-size: 20px;
-    max-width: 350px;
+    max-width: 400px;
   }
   .social svg {
     fill: rgba(255, 255, 255, 0.8);
@@ -52,10 +63,13 @@ const FooterSection = styled.footer`
     fill: white;
   }
   .Copyright {
+    font-weight: 400;
     font-size: 18px;
+    opacity: 0.95;
   }
   /* Footer image */
   .image-footer {
+    z-index: 1;
     position: absolute;
     top: 0;
     right: 0;
@@ -80,13 +94,17 @@ const FooterSection = styled.footer`
     object-fit: contain;
     position: absolute;
   }
-  @media screen and (max-width: 940px) {
+  @media screen and (max-width: 1200px) {
     margin: 0 20px;
+  }
+  @media screen and (max-width: 850px) {
+    padding: 70px 50px !important;
+  }
+  @media screen and (max-width: 650px) {
     padding: 70px 50px !important;
     text-align: center;
     align-items: center;
     .email {
-      font-size: 30px;
     }
     .image-footer {
       display: none;

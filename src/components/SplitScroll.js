@@ -11,8 +11,10 @@ const SplitScrollSection = styled.section`
   }
   .intro h1 {
     font-size: 60px;
+    font-weight: 600;
     color: var(--clr-grey-dark);
-    line-height: 1em;
+    line-height: 0.9em;
+    margin: 5px 0 10px;
   }
   .intro p {
     font-size: 22px;
@@ -20,8 +22,7 @@ const SplitScrollSection = styled.section`
     color: var(--clr-grey-dark);
   }
   .services span {
-    font-size: 1em;
-    font-weight: 550;
+    font-weight: 600;
     letter-spacing: 0.15em;
     text-transform: uppercase;
   }
@@ -31,7 +32,7 @@ const SplitScrollSection = styled.section`
     content: "";
     height: 0.2em;
     position: relative;
-    margin-right: 1.5em;
+    margin-right: 1em;
     display: inline-block;
     background: var(--clr-grey-light);
   }
@@ -120,7 +121,8 @@ const SplitScrollSection = styled.section`
       }
 
       .services span {
-        font-size: 0.9em;
+        font-size: 15px;
+
         letter-spacing: 0.1em;
       }
       .services span::before {

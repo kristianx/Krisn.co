@@ -13,6 +13,10 @@ const HeroSection = styled.div`
     font-size: 40px;
     font-weight: 500;
     color: var(--clr-grey-light);
+    max-width: 650px;
+  }
+  h1 span {
+    font-weight: 600;
   }
   .text-dark {
     color: var(--primary);
@@ -23,18 +27,8 @@ function Hero() {
   return (
     <HeroSection className="Hero">
       <h1 className="Hero-text">
-        Hi there! I help{" "}
-        <span className="text-dark">
-          <b>startups</b>
-        </span>{" "}
-        and{" "}
-        <span className="text-dark">
-          <b>
-            small <br />
-            businesses
-          </b>
-        </span>{" "}
-        create growth-driven <br />
+        Hi there! I help <span className="text-dark">startups</span> and{" "}
+        <span className="text-dark">small businesses</span> create growth-driven
         products.
       </h1>
     </HeroSection>

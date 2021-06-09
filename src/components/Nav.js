@@ -13,8 +13,7 @@ function Nav(props) {
     top: 0;
     right: 30px;
     left: 30px;
-    &.pageload {
-    }
+    /* When mobile menu opens */
     &.active {
       .Logo-text {
         color: #fff;
@@ -22,6 +21,9 @@ function Nav(props) {
     }
     h1.Logo-text {
       ${props.theme === "light" ? "color: #fff;" : "color: var(--primary);"}
+      font-family:Gilr;
+      font-weight: 600;
+      font-size: 26px;
     }
     a:hover h1.Logo-text {
       background: linear-gradient(-45deg, #e73c7e, #23a6d5, #23d5ab);
@@ -31,13 +33,15 @@ function Nav(props) {
       -moz-text-fill-color: transparent;
       -webkit-text-fill-color: transparent;
     }
-
+    /*Mobile menu z-index*/
     a {
       z-index: 101;
     }
     li {
       display: inline;
       margin-right: 2.5em;
+      font-weight: 500;
+      font-size: 19px;
       :nth-last-child(2) {
         margin-right: 0;
       }
@@ -64,11 +68,12 @@ function Nav(props) {
       fill: #fff;
     }
     @media screen and (min-width: 940px) {
+      ul {
+        margin-top: 5px;
+      }
       a {
-        font-size: 18px;
         ${props.theme === "light" ? "color: #fff;" : "color: var(--primary);"}
 
-        font-weight: 500;
         :hover {
           ${props.theme === "light"
             ? "color: #fff!important;"
@@ -100,6 +105,7 @@ function Nav(props) {
         position: fixed;
         align-items: center;
         text-align: center;
+
         width: 100vw;
         height: 100vh;
         top: 0;
@@ -123,11 +129,11 @@ function Nav(props) {
       }
       li {
         margin: 0;
-        padding: 20px 0;
+        padding: 25px 0;
         display: block;
       }
       a {
-        font-size: 25px;
+        font-size: 28px;
         color: #fff;
       }
     }
