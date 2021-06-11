@@ -10,13 +10,13 @@ function Blog() {
   const Hakka = styled.div`
     text-align: center;
     img {
-      max-width: 400px;
-      width: 80%;
+      max-width: 350px;
+      width: 65%;
       margin: 150px 0 50px;
     }
     p {
       font-family: graph;
-      font-size: 27px;
+      font-size: 22px;
       font-weight: 400;
       color: var(--clr-grey-light);
       width: 80%;
