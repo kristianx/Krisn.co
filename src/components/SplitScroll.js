@@ -20,6 +20,8 @@ const SplitScrollSection = styled.section`
     font-size: 22px;
     max-width: 25em;
     color: var(--clr-grey-dark);
+    line-height: 30px;
+    white-space: pre-wrap;
   }
   .services span {
     font-weight: 600;

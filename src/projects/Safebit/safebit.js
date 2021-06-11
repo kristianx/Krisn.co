@@ -54,14 +54,14 @@ function SafeBit() {
           services={"UI/UX Design, Branding, Prototype"}
           title={"SafeBit"}
           description={
-            "Travelo is an online travel platform connecting local agencies and passengers. Travelers can explore the best experiences they can enjoy, get discounts, and compare prices."
+            "SafeBit is a digital cryptocurrency wallet where users can transact with digital currencies like Bitcoin, Ethereum, Cardano, and Litecoin. Helping millions across the globe have an easy and safe way to manage their digital assets."
           }
           bgImage={SafeBitBg}
           image={<img src={SafeBitMock} alt="Main Project" />}
         />
         <ProjectIntro
-          challenge="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dignissimos nesciunt eos voluptates tempora aliquid, minus hic et ipsum beatae."
-          outcome="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dignissimos nesciunt eos voluptates tempora aliquid, minus hic et ipsum beatae."
+          challenge="Alleviate the difficulties of buying and managing crypto assets through a sleek and well-organized interface."
+          outcome="Robust and confidential mobile application for buying and managing crypto assets."
           role="Lead UI/UX Designer"
           theme="light"
         />
@@ -70,7 +70,7 @@ function SafeBit() {
         services={"Mockups"}
         title={"Onboarding"}
         description={
-          "The first thing you will see when you open a app is the onboarding screen which will guide you to make an account or sign in with already existing one"
+          "The first thing you will see when you enter the app is the onboarding screen. On this screen, you will be guided to make an account or sign in with an already existing one. You can also have a look at some main crypto charts."
         }
         right={[
           <img src={WelcomeMock} alt="Onboarding" />,
@@ -81,7 +81,7 @@ function SafeBit() {
         services={"Mockups"}
         title={"Dashboard"}
         description={
-          "The first thing you will see when you open a app is the onboarding screen which will guide you to make an account or sign in with already existing one"
+          "Being the main screen, I wanted to make it compact and allow users to see their assets via pie chart for an overall look, and also give them the ability to dig in charts down below."
         }
         right={[<img src={Dashboard} alt="Dashboard" />]}
       />{" "}
@@ -89,7 +89,7 @@ function SafeBit() {
         services={"Mockups"}
         title={"Activity"}
         description={
-          "The first thing you will see when you open a app is the onboarding screen which will guide you to make an account or sign in with already existing one"
+          "The activity screen is pretty straightforward. You can go through wallets via the dropdown or using micro-interactions (Quick scroll). \u000A \u000AThis page gets cluttered with information fast. I wanted to preserve as many transactions as possible. If you are interested, you can expand each transaction to see more details about it."
         }
         right={[<img src={Activity} alt="Activity" />]}
       />
@@ -97,7 +97,7 @@ function SafeBit() {
         services={"Mockups"}
         title={"Transfers"}
         description={
-          "The first thing you will see when you open a app is the onboarding screen which will guide you to make an account or sign in with already existing one"
+          "You can pick a wallet from which you will transfer the assets, enter the address manually or by scanning the QR code, enter the amount and your assets are on their way."
         }
         right={[<img src={Transfers} alt="Transfers" />]}
       />
@@ -105,7 +105,7 @@ function SafeBit() {
         services={"Mockups"}
         title={"Backup you funds"}
         description={
-          "The first thing you will see when you open a app is the onboarding screen which will guide you to make an account or sign in with already existing one"
+          "To backup your funds successfully, you will be required to store or memorize 12 backup words. These words will be used as a backup. Here you can go through them at the speed you want."
         }
         right={[
           <img src={Backup1} alt="Backup1" />,
@@ -116,7 +116,7 @@ function SafeBit() {
         services={"Mockups"}
         title={"Configure your payment methods"}
         description={
-          "The first thing you will see when you open a app is the onboarding screen which will guide you to make an account or sign in with already existing one"
+          "You can store up to 5 different payment methods. This feature enables you to have more flexibility while paying."
         }
         right={[<img src={Payment} alt="Payment" />]}
       />
@@ -124,16 +124,14 @@ function SafeBit() {
         services={"Mockups"}
         title={"Your addresses"}
         description={
-          "The first thing you will see when you open a app is the onboarding screen which will guide you to make an account or sign in with already existing one"
+          "You can create a new, or import an existing wallet to your account. In just a few steps you can have your assets ready."
         }
         right={[<img src={Addresses} alt="Addresses" />]}
       />
       <SplitScroll
         services={"Mockups"}
         title={"Additional components"}
-        description={
-          "The first thing you will see when you open a app is the onboarding screen which will guide you to make an account or sign in with already existing one"
-        }
+        description={"Here are some of the additional components you will see."}
         right={[
           <img src={Additional1} alt="Additional components" />,
           <img src={Additional2} alt="Additional components" />,
@@ -144,7 +142,7 @@ function SafeBit() {
         services={"Prototype"}
         title={"Why not try it out?"}
         description={
-          "I've implemented a figma prototype here so you can get a feel of Travelo"
+          "I've created a Figma prototype for this app so you can get a feel of Safebit. Don't hesitate to try it out!"
         }
         right={[
           <iframe

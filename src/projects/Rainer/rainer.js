@@ -71,6 +71,11 @@ const StyledHeader = styled.div`
     border-width: 1px;
     border-image-source: linear-gradient(-45deg, #e73c7e, #23a6d5, #23d5ab);
   }
+  p {
+    font-size: 22px;
+    max-width: 80%;
+    margin: 20px auto 0;
+  }
   @media screen and (max-width: 700px) {
     h2 {
       font-weight: 600;
@@ -101,15 +106,17 @@ function Rainer() {
             image={<img src={Mainimage} alt="Main Project" />}
           />
           <ProjectIntro
-            challenge="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dignissimos nesciunt eos voluptates tempora aliquid, minus hic et ipsum beatae."
-            outcome="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dignissimos nesciunt eos voluptates tempora aliquid, minus hic et ipsum beatae."
+            challenge="Build an efficient and nice-looking interface that will allow passengers to book different types of rides in just a few taps."
+            outcome="Straight-to-the-point mobile interface and backend management system following brand guidelines."
             role="Lead UI/UX Designer"
           />
         </RightSectionBackground>
         <SplitScroll
           services={"Passengers App"}
           title={"Onboarding"}
-          description={"The goal is to finish your booking in 3 taps"}
+          description={
+            "For efficiency, keeping it simple is the key. If it's your first time in the app, you need to create a new account through a small form. For security reasons, you will be asked to verify your phone number. Drivers already had a pre-build account."
+          }
           right={[
             <img className="gif-animation" src={Animacija} alt="Onboarding" />,
             <img src={Login} alt="Login" />,
@@ -118,12 +125,16 @@ function Rainer() {
         <StyledHeader className="container">
           <h2>Passengers Experience</h2>
           <hr />
+          <p>
+            The goal of the passenger's app is to provide a successful booking
+            experience in just 3 taps.
+          </p>
         </StyledHeader>
         <SplitScroll
           services={"Passengers App"}
           title={"Tap 1"}
           description={
-            "The first thing you will see when you open a app is the onboarding screen which will guide you to make an account or sign in with already existing one"
+            "The first thing you as a new user will be looking for is the entry form (the initial trigger) to start a search. The form is placed on the bottom of the screen so you can reach it more easily. \u000A \u000AOn tap, the search screen opens, input is automatically in focus which will show the keyboard. Under the input field, there is an option for saved locations and past trips."
           }
           right={[<img src={Tap1} alt="Tap1" />]}
         />
@@ -131,7 +142,7 @@ function Rainer() {
           services={"Passengers App"}
           title={"Tap 2"}
           description={
-            "The first thing you will see when you open a app is the onboarding screen which will guide you to make an account or sign in with already existing one"
+            "The second tap serves for choosing the type of ride you want. Years of experience perfected Rainer’s car selection which can be represented in 3 main vehicle types, by default most used one is selected. \u000A \u000AMost users want their ride right away, which is chosen by default. If needed you can arrange a custom pickup time."
           }
           right={[<img src={Tap2} alt="Tap2" />]}
         />
@@ -139,7 +150,7 @@ function Rainer() {
           services={"Passengers App"}
           title={"Tap 3"}
           description={
-            "The first thing you will see when you open a app is the onboarding screen which will guide you to make an account or sign in with already existing one"
+            "Change your payment method if needed and finish your booking."
           }
           right={[<img src={Tap3} alt="Tap3" />]}
         />
@@ -147,7 +158,7 @@ function Rainer() {
           services={"Passengers App"}
           title={"Your driver is on the way"}
           description={
-            "The first thing you will see when you open a app is the onboarding screen which will guide you to make an account or sign in with already existing one"
+            "After you finish your booking, available drivers are notified about a new trip. Once the driver is on his way, you will see more information about your ride and where he is."
           }
           right={[<img src={DriverOnWay} alt="DriverOnWay" />]}
         />
@@ -155,7 +166,7 @@ function Rainer() {
           services={"Passengers App"}
           title={"Leave your feedback"}
           description={
-            "The first thing you will see when you open a app is the onboarding screen which will guide you to make an account or sign in with already existing one"
+            "When you reach your destination, you can rate your driver and submit your feedback."
           }
           right={[<img src={Feedback} alt="Feedback" />]}
         />{" "}
@@ -163,7 +174,7 @@ function Rainer() {
           services={"Passengers App"}
           title={"New Payment"}
           description={
-            "The first thing you will see when you open a app is the onboarding screen which will guide you to make an account or sign in with already existing one"
+            "Adding new payment methods is simple and easy. It will speed up your bookings, plus it will give you more flexibility when paying for your trips."
           }
           right={[<img src={NewPayment} alt="NewPayment" />]}
         />{" "}
@@ -171,7 +182,7 @@ function Rainer() {
           services={"Passengers App"}
           title={"My Trips"}
           description={
-            "The first thing you will see when you open a app is the onboarding screen which will guide you to make an account or sign in with already existing one"
+            "You can go through your past trips and see details about them. You can also see more info about the driver and reach out to them if you accidentally left something behind."
           }
           right={[<img src={MyTrips} alt="MyTrips" />]}
         />
@@ -179,27 +190,31 @@ function Rainer() {
           services={"Passengers App"}
           title={"Settings & Sidebar"}
           description={
-            "The first thing you will see when you open a app is the onboarding screen which will guide you to make an account or sign in with already existing one"
+            "The sidebar is equipped with all you need for navigating the app. The settings page will be updated as the app develops."
           }
           right={[<img src={Settings} alt="Settings" />]}
         />
         <StyledHeader className="container">
           <h2>Driver's Experience</h2>
           <hr />
+          <p>
+            The goal of the driver's app is to provide an easy way to connect
+            and find new passengers.
+          </p>
         </StyledHeader>
         <SplitScroll
           services={"Drivers App"}
           title={"Main Screen"}
           description={
-            "The first thing you will see when you open a app is the onboarding screen which will guide you to make an account or sign in with already existing one"
+            "Once the driver is online, they can receive new trips and see their passengers on the map. There is an option for starting a street ride in situations where the passenger is not using the app. "
           }
           right={[<img src={DriverDash} alt="Settings" />]}
         />
         <SplitScroll
           services={"Drivers App"}
-          title={"Passenger Approach"}
+          title={"New Ride"}
           description={
-            "The first thing you will see when you open a app is the onboarding screen which will guide you to make an account or sign in with already existing one"
+            "When a new trip request comes in, the driver can see information about the trip with the buttons to respond to it in a timely manner.\u000A \u000AWhen the driver starts a new street ride, he has an option to enter the passenger's information."
           }
           right={[<img src={DriverInvite} alt="Settings" />]}
         />
@@ -207,7 +222,7 @@ function Rainer() {
           services={"Drivers App"}
           title={"Riding"}
           description={
-            "The first thing you will see when you open a app is the onboarding screen which will guide you to make an account or sign in with already existing one"
+            "Both drivers and passengers can have an easy way to communicate. The driver can choose if they want to use built-in or third-party maps."
           }
           right={[<img src={DriverRiding} alt="Settings" />]}
         />
@@ -215,7 +230,7 @@ function Rainer() {
           services={"Drivers App"}
           title={"Invoice"}
           description={
-            "The first thing you will see when you open a app is the onboarding screen which will guide you to make an account or sign in with already existing one"
+            "Upon arrival, the driver will receive an invoice that he can check before confirming it."
           }
           right={[<img src={DriverInvoice} alt="Settings" />]}
         />
@@ -223,7 +238,7 @@ function Rainer() {
           services={"Drivers App"}
           title={"Summary"}
           description={
-            "The first thing you will see when you open a app is the onboarding screen which will guide you to make an account or sign in with already existing one"
+            "The driver can go over their completed trips and see more information about them as well as a summary of their earnings."
           }
           right={[<img src={DriverSummary} alt="Settings" />]}
         />

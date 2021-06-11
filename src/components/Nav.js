@@ -36,11 +36,12 @@ function Nav(props) {
     /*Mobile menu z-index*/
     a {
       z-index: 101;
+      transition: color 300ms ease 0s;
     }
     li {
       display: inline;
       margin-right: 2.5em;
-      font-weight: 500;
+      font-weight: 600;
       font-size: 19px;
       :nth-last-child(2) {
         margin-right: 0;
@@ -84,7 +85,7 @@ function Nav(props) {
       ul:hover a {
         ${props.theme === "light"
           ? "color: var(--offWhite);"
-          : "color: var(--clr-grey-light);"}
+          : "color: var(--clr-greyy-light);"}
       }
     }
 

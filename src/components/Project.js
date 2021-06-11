@@ -12,7 +12,7 @@ function Project(props) {
     >
       <a href={props.link}>
         <div className="description">
-          <img className="project-logo" src={props.logoImage} alt="" />
+          <img className="project-logo" src={props.logoImage} alt="Logo" />
           <p className="description-text">{props.descriptionText}</p>
           <div className="tags">
             {props.tags.map((tag) => (

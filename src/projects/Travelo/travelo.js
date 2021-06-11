@@ -85,8 +85,8 @@ export default class Travelo extends React.Component {
               image={<img src={rainerMockup} alt="Main Project" />}
             />
             <ProjectIntro
-              challenge="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dignissimos nesciunt eos voluptates tempora aliquid, minus hic et ipsum beatae."
-              outcome="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dignissimos nesciunt eos voluptates tempora aliquid, minus hic et ipsum beatae."
+              challenge="We want to offer our customers the ability to book trips from local agencies,  see reviews, and compare prices all in one place."
+              outcome="Cross-platform solution built for Agencies and Customers."
               role="Lead UI/UX Designer"
             />
           </RightSectionBackground>
@@ -95,7 +95,7 @@ export default class Travelo extends React.Component {
             services={"Mockups"}
             title={"Onboarding"}
             description={
-              "The first thing you will see when you open a app is the onboarding screen which will guide you to make an account or sign in with already existing one"
+              "The first thing you will see when you open an app is the onboarding screen which will guide you to make an account or sign in with an already existing one."
             }
             right={[
               <img src={Onboarding1} alt="Onboarding" />,
@@ -105,9 +105,9 @@ export default class Travelo extends React.Component {
 
           <SplitScroll
             services={"Mockups"}
-            title={"Dashboard & Search"}
+            title={"Home & Search"}
             description={
-              "The first thing you will see when you open a app is the onboarding screen which will guide you to make an account or sign in with already existing one"
+              "The home screen is where you will get your imagination going. Starting from stories where you can see photos of recent trips, down to the blog section to the seasonally selected destinations you can choose from.\u000A \u000AIf you are interested in searching specific places or just casually browsing, you will get a range of different places, trips, and agencies."
             }
             right={[
               <img src={Dashboard} alt="Onboarding" />,
@@ -119,7 +119,7 @@ export default class Travelo extends React.Component {
             services={"Mockups"}
             title={"Stories"}
             description={
-              "The first thing you will see when you open a app is the onboarding screen which will guide you to make an account or sign in with already existing one"
+              "Agencies will have the ability to post stories and promote their trips through them. Stories will be sorted based on location. "
             }
             right={[<img src={Stories} alt="Onboarding" />]}
           />
@@ -127,7 +127,7 @@ export default class Travelo extends React.Component {
             services={"Mockups"}
             title={"Profile"}
             description={
-              "The first thing you will see when you open a app is the onboarding screen which will guide you to make an account or sign in with already existing one"
+              "You have control over your information. Depending on your traveling activity, you will receive points that you can use to book a trip."
             }
             right={[<img src={Profile} alt="Onboarding" />]}
           />

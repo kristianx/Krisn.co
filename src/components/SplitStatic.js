@@ -31,7 +31,7 @@ const SplitStaticSection = styled.section`
   }
   .intro p {
     font-size: 22px;
-    max-width: 22em;
+    max-width: 30em;
     color: var(--clr-grey-dark);
   }
   .services span {

@@ -10,7 +10,7 @@ const FooterSection = styled.footer`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 80px 55% 80px 80px;
+  padding: 70px 55% 70px 80px;
   margin-bottom: 80px;
   position: relative;
   .email,
@@ -48,6 +48,10 @@ const FooterSection = styled.footer`
   .about-me {
     font-size: 20px;
     max-width: 400px;
+    a {
+      text-decoration: underline;
+      color: white;
+    }
   }
   .social svg {
     fill: rgba(255, 255, 255, 0.8);
@@ -101,7 +105,7 @@ const FooterSection = styled.footer`
     padding: 70px 50px !important;
   }
   @media screen and (max-width: 650px) {
-    padding: 70px 50px !important;
+    padding: 40px 25px !important;
     text-align: center;
     align-items: center;
     .email {
@@ -122,9 +126,17 @@ function Footer() {
         </h1>
         <hr />
         <p className="about-me">
-          I love to make things. I have a passion for aesthetics and simple
-          elegance. I possess a growth and curious mindset that reflects in
-          everything I do as a designer.{" "}
+          Full-stack designer & developer mutating into Entrepreneur. <br />
+          <br /> I love to design and make things. Currently working with a few
+          clients across the world on various projects. <br />
+          <br />
+          <a
+            href="https://www.linkedin.com/in/kristian-c-11b838111/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Say Hi!
+          </a>
         </p>
         <Social />
         <p className="Copyright">Kristian Cupurdija ©2021</p>

@@ -19,17 +19,11 @@ import traveloBg from "../img/traveloBg.png";
 import traveloMockup from "../img/traveloMockup.png";
 import traveloLogo from "../img/traveloLogo.svg";
 
-const transition = { duration: 0.7, ease: [0.43, 0.13, 0.23, 0.96] };
-
 function Projects() {
   return (
     <motion.div className="container mg-tp-100 mg-bt-200">
       <h1 className="section-title">Projects</h1>
-      <section
-        className="projects"
-        exit={{ opacity: 0 }}
-        transition={transition}
-      >
+      <section className="projects">
         <Project
           descriptionText={
             "Safebit is an crypto currency wallet mobile application."
@@ -48,7 +42,7 @@ function Projects() {
 
         <Project
           descriptionText={
-            "Straight-to-the-point mobile interface and backend management system following brand guidelines."
+            "Taxi Rainer is an compact mobile application developed for both passengers and drivers."
           }
           tags={["UI/UX Design", "Mobile Development"]}
           link={"/rainer"}
@@ -59,7 +53,9 @@ function Projects() {
           customClass={"dark-text rainer"}
         />
         <Project
-          descriptionText={"Business analysis mobile applicatoin."}
+          descriptionText={
+            "Config Analysis is a comperhensive business analysis application built for every business."
+          }
           tags={["UI/UX Design", "Mobile Development"]}
           mockupImage={analitikaMockup}
           link={"/analitika"}
@@ -70,7 +66,7 @@ function Projects() {
         />
         <Project
           descriptionText={
-            "Travelo is an online travel platform connecting local agencies and passengers."
+            "Travelo is an online traveling platform, connecting local agencies and passengers."
           }
           tags={["UI/UX Design", "Mobile Development"]}
           mockupImage={traveloMockup}

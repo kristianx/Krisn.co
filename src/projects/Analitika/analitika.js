@@ -61,13 +61,13 @@ export default class Analitika extends React.Component {
             services={"UI/UX Design"}
             title={"Config Analysis"}
             description={
-              "Travelo is an online travel platform connecting local agencies and passengers. Travelers can explore the best experiences they can enjoy, get discounts, and compare prices."
+              "Config Analysis is a mobile application built for business owners. It's allowing them to have versatile insights into their business. Depending on the package that the client is using, they can enjoy a variety of features that will allow them to manage and overview their business with ease."
             }
             image={<img src={Mainimage} alt="Main Project" />}
           />
           <ProjectIntro
-            challenge="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dignissimos nesciunt eos voluptates tempora aliquid, minus hic et ipsum beatae."
-            outcome="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dignissimos nesciunt eos voluptates tempora aliquid, minus hic et ipsum beatae."
+            challenge="Design a clean mobile application for business owners. Allow them to take a quick and detailed overview of their business and not feel overwhelmed in the process."
+            outcome="An efficient mobile application with a fine balance between a clean and versatile interface. This application will be connected to the already built POS system."
             role="Lead UI/UX Designer"
             theme="light"
           />
@@ -77,7 +77,7 @@ export default class Analitika extends React.Component {
           services={"Mockups"}
           title={"Onboarding"}
           description={
-            "The first thing you will see when you open a app is the onboarding screen which will guide you to make an account or sign in with already existing one"
+            "Upon opening the application you will have an option to choose in which language you want to continue. Because the application is connected with an already built POS system you will have a created account."
           }
           right={[<img src={Onboarding} alt="Onboarding" />]}
         />
@@ -86,7 +86,7 @@ export default class Analitika extends React.Component {
           services={"Mockups"}
           title={"Dashboard"}
           description={
-            "The first thing you will see when you open a app is the onboarding screen which will guide you to make an account or sign in with already existing one"
+            "On the dashboard, you can see custom charts for your business. In addition to the dashboard, you will have expandable top and bottom sections. In the top section, you can choose your business units. At the bottom section, you can set your time constraints."
           }
           right={[
             <img src={DashClose} alt="Dashboard Closed" />,
@@ -99,7 +99,7 @@ export default class Analitika extends React.Component {
           services={"Mockups"}
           title={"Sidebars"}
           description={
-            "The first thing you will see when you open a app is the onboarding screen which will guide you to make an account or sign in with already existing one"
+            "In the left sidebar, you can choose between your companies and do an analysis with pre-built filters for them. \u000A \u000AIn the right sidebar, you can have additional different filters at your choosing."
           }
           right={[
             <img src={LeftSidebar} alt="Left Sidebar" />,
@@ -113,7 +113,7 @@ export default class Analitika extends React.Component {
           services={"Mockups"}
           title={"Complex Charts"}
           description={
-            "The first thing you will see when you open a app is the onboarding screen which will guide you to make an account or sign in with already existing one"
+            "Certain charts will allow you to filter out details and create calculations on top of them."
           }
           right={[<img src={ComplexChart} alt="Complex Charts" />]}
         />
@@ -121,7 +121,7 @@ export default class Analitika extends React.Component {
           services={"Mockups"}
           title={"Settings"}
           description={
-            "The first thing you will see when you open a app is the onboarding screen which will guide you to make an account or sign in with already existing one"
+            "One click away from changing your theme, language, and other details."
           }
           right={[<img src={SettingsMock} alt="Settings" />]}
         />

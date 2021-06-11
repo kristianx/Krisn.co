@@ -5,9 +5,10 @@ function ProjectIntro(props) {
     padding: 0px 0 150px 40px;
     display: grid;
     grid-template-columns: 70% 30%;
-    grid-gap: 20px;
+    grid-gap: 30px;
     h2 {
       font-size: 22px;
+      margin-bottom: 5px;
       ${props.theme === "light"
         ? "color: #fff;"
         : "color: var(--clr-grey-dark);"}
@@ -16,7 +17,7 @@ function ProjectIntro(props) {
       ${props.theme === "light"
         ? "color: var(--offWhite);"
         : "color: var(--clr-grey-light);"}
-      font-size: 18px;
+      font-size: 20px;
     }
     .challenge {
       grid-column: 1 / -1;
