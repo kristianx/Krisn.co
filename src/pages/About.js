@@ -35,7 +35,6 @@ const magicHove = {
 const AboutStyled = styled.div`
   margin: auto;
   width: 60%;
-
   /*IMAGE*/
   .portrait {
     max-width: 500px;

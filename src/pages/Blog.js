@@ -4,6 +4,7 @@ import Nav from "../components/Nav";
 import { pageVariants } from "../styles/Animation";
 import styled from "styled-components";
 import NoPosts from "../img/no-posts.svg";
+import "../styles/ultrawideWrapper.css";
 //import '../main.css';
 
 function Blog() {
