@@ -13,6 +13,7 @@ function Blog() {
       max-width: 350px;
       width: 65%;
       margin: 150px 0 50px;
+      filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.05));
     }
     p {
       font-family: graph;

@@ -235,21 +235,21 @@ function About() {
           <br />
           <p>
             Through time, I have grown to really enjoy the process of finding
-            and iterating on new ideas that are requiring me to constantly
-            challenge the limits of my knowledge, seek new ways to solve
-            problems, and help others in the process.
+            and iterating on new ideas. They are requiring me to constantly
+            challenge the limits of my knowledge and seek new ways to solve
+            problems. I like to help others in the process.
           </p>
           <br />
           <p>
-            In my spare time, I fiddle with robotics. Besides that, I enjoy some
-            deep sci-fi movies, good music, and some quality time with my
-            family.
+            In my spare time, I fiddle with robotics and computers. Besides
+            that, I enjoy some deep sci-fi movies, good music, nicely designed
+            things and some quality time with my family.
           </p>
         </div>
         <div className="map">
           <h2 class="education">Education</h2>
           <p class="education">
-            I am currenly finishing my Software Engineer degree in Mostar in
+            I am currently finishing my Software Engineer degree in Mostar in
             beautiful Bosnia and Herzegovina.
           </p>
           <svg
@@ -330,7 +330,7 @@ function About() {
                 Managed a variety of cross-platform projects ranging from simple
                 product websites to complex software solutions. I am used to
                 working remotely and being responsible for the UI & UX design
-                decision-making and consultancy, as well as diging into code.
+                decision-making and consultancy, as well as digging into code.
               </p>
               <p className="date">2014 - Present</p>
             </div>
@@ -351,10 +351,10 @@ function About() {
                 Dvlpmt Team <span>Belgrade, Serbia</span>
               </h2>
               <p>
-                I was a part of an small, but strong team. My responsibilities
+                I was a part of a small, but strong team. My responsibilities
                 we're mainly on the design part of the project. Depending on the
-                clients needs, the responsibilities ranged from branding to UI &
-                UX Design.
+                client's needs, the responsibilities ranged from branding to UI
+                & UX Design.
               </p>
               <p className="date">2016 - 2018</p>
             </div>
