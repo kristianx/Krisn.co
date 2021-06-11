@@ -370,8 +370,9 @@ function About() {
             </div>
           </div>
           <motion.a
+            href="https://www.linkedin.com/in/kristian-c-11b838111/"
+            target="_blank"
             className="see-more-btn"
-            href="/"
             variants={magicHov}
             whileHover="hover"
             initial="initial"
