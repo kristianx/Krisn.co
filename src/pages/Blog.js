@@ -38,7 +38,7 @@ function Blog() {
 
       <Hakka>
         <img src={NoPosts} alt="No Posts" />
-        <p>Seems like there is no posts to show. :(</p>
+        <p>Seems like there are no posts. :(</p>
       </Hakka>
     </motion.div>
   );
