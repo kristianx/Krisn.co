@@ -5,6 +5,7 @@ import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 import { pageVariants } from "../styles/Animation";
 import Portrait from "../img/portrait.png";
+import "../styles/about.css";
 
 const magicHov = {
   hover: {
