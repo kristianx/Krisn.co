@@ -1,6 +1,7 @@
 .projects {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  z-index: 10;
 }
 .grid-lg {
   grid-column: 1 / -1;
