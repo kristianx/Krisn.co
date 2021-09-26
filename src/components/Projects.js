@@ -21,9 +21,9 @@ import traveloLogo from "../img/traveloLogo.svg";
 
 function Projects() {
   return (
-    <motion.div className="container mg-tp-100 mg-bt-200">
+    <motion.div id="container" className="container mg-tp-100 mg-bt-200">
       <h1 className="section-title">Projects</h1>
-      <section className="projects">
+      <section className="projects" id="projects">
         <Project
           descriptionText={
             "Safebit is an crypto currency wallet mobile application."

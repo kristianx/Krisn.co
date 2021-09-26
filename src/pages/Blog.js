@@ -9,6 +9,7 @@ import "../styles/ultrawideWrapper.css";
 
 function Blog() {
   const Hakka = styled.div`
+    z-index: -1;
     text-align: center;
     img {
       max-width: 350px;

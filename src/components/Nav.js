@@ -5,11 +5,11 @@ import { Link } from "react-router-dom";
 
 function Nav(props) {
   const NavigationStyled = styled.nav`
+    position: absolute;
     height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: absolute;
     top: 0;
     right: 30px;
     left: 30px;
@@ -35,7 +35,7 @@ function Nav(props) {
     }
     /*Mobile menu z-index*/
     a {
-      z-index: 101;
+      z-index: 10;
       transition: color 300ms ease 0s;
     }
     li {
@@ -54,7 +54,7 @@ function Nav(props) {
     .hamburger {
       padding-top: 5px;
       display: none;
-      z-index: 101;
+      z-index: 10;
     }
     .nav-social .social {
       bottom: 20vh;
@@ -93,6 +93,10 @@ function Nav(props) {
       right: 0;
       left: 0;
       padding: 0 20px;
+      &.active {
+        position: fixed;
+        z-index: 9;
+      }
       .hamburger {
         display: inline-block !important;
       }
@@ -104,16 +108,12 @@ function Nav(props) {
       }
       ul {
         position: fixed;
+        z-index: 9;
         align-items: center;
         text-align: center;
-
-        width: 100vw;
         height: 100vh;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        z-index: 100;
+        width: 100vw;
+        inset: 0;
         flex-direction: column;
         padding-top: 20vh;
         background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
@@ -121,7 +121,7 @@ function Nav(props) {
       }
       ul.active {
         animation: gradient 15s ease infinite, load 0.5s ease;
-        opacity: 1;
+        position: fixed;
         display: flex;
       }
 
@@ -289,10 +289,24 @@ function Nav(props) {
   `;
 
   const [isActive, setActive] = useState(false);
+  const projects = document.getElementById("projects");
+  const footer = document.getElementById("footer");
+  const container = document.getElementById("container");
+
   if (isActive) {
     document.documentElement.style.overflow = "hidden";
+    if (footer != null && projects != null) {
+      container.style.zIndex = "-1";
+      projects.style.opacity = "0";
+      footer.style.opacity = "0";
+    }
   } else {
     document.documentElement.style.overflow = "scroll";
+    if (footer != null && projects != null) {
+      container.style.zIndex = "5";
+      projects.style.opacity = "1";
+      footer.style.opacity = "1";
+    }
   }
   const handleToggle = () => {
     setActive(!isActive);

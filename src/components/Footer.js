@@ -119,7 +119,7 @@ const FooterSection = styled.footer`
 function Footer() {
   return (
     <div>
-      <FooterSection className="footer container mg-tp-100">
+      <FooterSection id="footer" className="footer container mg-tp-100">
         <h1 className="section-title">Let's connect</h1>
         <h1 className="email">
           <a href="mailto:hi@krisn.co">hi@krisn.co</a>
